@@ -1,0 +1,38 @@
+.navbar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+
+}
+ul{
+   display: flex; 
+
+}
+.burger-bar{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color:white;
+    font-size: 35px;
+    display: none;
+}
+
+@media (max-width: 760px){
+    .burger-bar {
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .navigation.activenav{
+        display: block;
+    }
+}
+
